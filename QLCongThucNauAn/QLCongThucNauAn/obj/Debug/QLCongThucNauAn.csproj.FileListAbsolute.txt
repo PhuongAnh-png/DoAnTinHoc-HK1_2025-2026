@@ -1,0 +1,11 @@
+D:\DoAnTinHoc\QLCongThucNauAn\QLCongThucNauAn\obj\Debug\QLCongThucNauAn.csproj.AssemblyReference.cache
+D:\DoAnTinHoc\QLCongThucNauAn\QLCongThucNauAn\obj\Debug\QLCongThucNauAn.csproj.SuggestedBindingRedirects.cache
+D:\DoAnTinHoc\QLCongThucNauAn\QLCongThucNauAn\obj\Debug\QLCongThucNauAn.Form1.resources
+D:\DoAnTinHoc\QLCongThucNauAn\QLCongThucNauAn\obj\Debug\QLCongThucNauAn.Properties.Resources.resources
+D:\DoAnTinHoc\QLCongThucNauAn\QLCongThucNauAn\obj\Debug\QLCongThucNauAn.csproj.GenerateResource.cache
+D:\DoAnTinHoc\QLCongThucNauAn\QLCongThucNauAn\obj\Debug\QLCongThucNauAn.csproj.CoreCompileInputs.cache
+D:\DoAnTinHoc\QLCongThucNauAn\QLCongThucNauAn\bin\Debug\QLCongThucNauAn.exe.config
+D:\DoAnTinHoc\QLCongThucNauAn\QLCongThucNauAn\bin\Debug\QLCongThucNauAn.exe
+D:\DoAnTinHoc\QLCongThucNauAn\QLCongThucNauAn\bin\Debug\QLCongThucNauAn.pdb
+D:\DoAnTinHoc\QLCongThucNauAn\QLCongThucNauAn\obj\Debug\QLCongThucNauAn.exe
+D:\DoAnTinHoc\QLCongThucNauAn\QLCongThucNauAn\obj\Debug\QLCongThucNauAn.pdb

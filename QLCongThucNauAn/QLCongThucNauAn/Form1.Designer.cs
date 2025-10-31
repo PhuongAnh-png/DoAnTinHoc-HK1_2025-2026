@@ -37,7 +37,7 @@
             // 
             this.btnXuLy.Location = new System.Drawing.Point(12, 21);
             this.btnXuLy.Name = "btnXuLy";
-            this.btnXuLy.Size = new System.Drawing.Size(91, 23);
+            this.btnXuLy.Size = new System.Drawing.Size(121, 46);
             this.btnXuLy.TabIndex = 0;
             this.btnXuLy.Text = "Xử Lý CSV";
             this.btnXuLy.UseVisualStyleBackColor = true;

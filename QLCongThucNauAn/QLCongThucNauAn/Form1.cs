@@ -66,50 +66,26 @@ namespace QLCongThucNauAn
 
         private void btnxemds_Click(object sender, EventArgs e)
         {
-            // Kiểm tra dữ liệu đã load chưa
-            if (dataGridView1.DataSource == null)
+            if (table == null || table.Rows.Count == 0)
             {
-                MessageBox.Show("Vui lòng nhấn 'Xử lý CSV' trước khi xem danh sách!");
+                MessageBox.Show("Chưa có dữ liệu! Vui lòng nhấn 'Xu Ly CSV' trước.");
                 return;
             }
 
-            // Lấy các dòng người dùng chọn
-            var selectedRows = dataGridView1.SelectedRows;
+            // Tạo bảng mới chỉ chứa 10 dòng đầu tiên
+            DataTable top10Table = table.Clone(); // sao chép cấu trúc cột
 
-            if (selectedRows.Count == 0)
+            int maxRows = Math.Min(10, table.Rows.Count);
+            for (int i = 0; i < maxRows; i++)
             {
-                MessageBox.Show("Vui lòng chọn ít nhất 1 dòng!");
-                return;
+                top10Table.ImportRow(table.Rows[i]);
             }
 
-            if (selectedRows.Count > 10)
-            {
-                MessageBox.Show("Chỉ được chọn tối đa 10 dòng!");
-                return;
-            }
-
-            // Chuẩn bị dữ liệu để truyền sang form Dslk
-            List<string[]> selectedData = new List<string[]>();
-
-            // Lấy header
-            selectedData.Add(table.Columns.Cast<DataColumn>()
-                .Select(c => c.ColumnName).ToArray());
-
-            // Lấy giá trị từ các dòng người dùng chọn
-            foreach (DataGridViewRow row in selectedRows)
-            {
-                if (row.IsNewRow) continue;
-                List<string> values = new List<string>();
-                foreach (DataGridViewCell cell in row.Cells)
-                {
-                    values.Add(cell.Value?.ToString() ?? "");
-                }
-                selectedData.Add(values.ToArray());
-            }
-
-            // Mở form Dslk và truyền dữ liệu người dùng chọn vào
-            Dslk formDanhSach = new Dslk(selectedData);
-            formDanhSach.Show();
+            // Hiển thị lên DataGridView
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.DataSource = top10Table;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.MultiSelect = true;
         }
     }
 }

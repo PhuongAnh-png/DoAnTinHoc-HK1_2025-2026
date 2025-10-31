@@ -9,4 +9,3 @@ D:\DoAnTinHoc\QLCongThucNauAn\QLCongThucNauAn\bin\Debug\QLCongThucNauAn.exe
 D:\DoAnTinHoc\QLCongThucNauAn\QLCongThucNauAn\bin\Debug\QLCongThucNauAn.pdb
 D:\DoAnTinHoc\QLCongThucNauAn\QLCongThucNauAn\obj\Debug\QLCongThucNauAn.exe
 D:\DoAnTinHoc\QLCongThucNauAn\QLCongThucNauAn\obj\Debug\QLCongThucNauAn.pdb
-D:\DoAnTinHoc\QLCongThucNauAn\QLCongThucNauAn\obj\Debug\QLCongThucNauAn.Dslk.resources

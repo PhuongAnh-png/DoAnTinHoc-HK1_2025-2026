@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QLCongThucNauAn.Data
 {
-    internal class RecipeNode
+    public class RecipeNode
     {
         // Dữ liệu lưu trong node
         public Recipe Data { get; set; }

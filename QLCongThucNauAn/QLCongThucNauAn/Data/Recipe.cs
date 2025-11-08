@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QLCongThucNauAn.Data
 {
-    internal class Recipe
+    public class Recipe
     {
 
         // Tên của công thức
@@ -26,6 +26,17 @@ namespace QLCongThucNauAn.Data
         //Số bước theo hướng
         public int Num_Steps { get; set; }
 
-       
+        public Recipe(string title, string category, string subcategory, string description, string ingredients, string directions, int num_Ingredients, int num_Steps)
+        {
+            Title = title;
+            Category = category;
+            Subcategory = subcategory;
+            Description = description;
+            Ingredients = ingredients;
+            Directions = directions;
+            Num_Ingredients = num_Ingredients;
+            Num_Steps = num_Steps;
+        }
+        public Recipe() { }
     }
 }

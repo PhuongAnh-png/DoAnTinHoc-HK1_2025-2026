@@ -27,5 +27,22 @@ namespace QLCongThucNauAn.Data
             }
         }
 
+        // lấy ds dưới dạng list
+        public List<Recipe> ToList()
+        {
+            List<Recipe> list = new List<Recipe>();
+            RecipeNode current = Head;
+            while (current != null)
+            {
+                list.Add(current.Data); //thêm món vào ds
+                current = current.Next; //->node tiếp x
+            }
+            return list;
+        }
+        public void Clear()
+        {
+            Head = null;
+            Head.Next = null;
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLCongThucNauAn.Data;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -8,7 +9,8 @@ namespace QLCongThucNauAn
 {
     public partial class Form1 : Form
     {
-        private DataTable table; 
+        private DataTable table;
+        private RecipeLinkedList recipeList = new RecipeLinkedList();
 
         public Form1()
         {
@@ -72,10 +74,10 @@ namespace QLCongThucNauAn
                 return;
             }
 
-            // Tạo bảng mới chỉ chứa 10 dòng đầu tiên
-            DataTable top10Table = table.Clone(); // sao chép cấu trúc cột
+            // Tạo bảng mới
+            DataTable top10Table = table.Clone(); 
 
-            int maxRows = Math.Min(10, table.Rows.Count);
+            int maxRows = Math.Min(10, table.Rows.Count); //số dòng hiển thị ra ds
             for (int i = 0; i < maxRows; i++)
             {
                 top10Table.ImportRow(table.Rows[i]);
